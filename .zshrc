@@ -1,1 +1,0 @@
-/Users/drewwyatt/.zshrc
