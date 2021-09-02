@@ -141,6 +141,6 @@
   },
   "redhat.telemetry.enabled": true,
   "editor.inlineSuggest.enabled": true,
-  "window.zoomLevel": 4,
+  "window.zoomLevel": 3,
   "editor.accessibilitySupport": "off"
 }
