@@ -1,0 +1,146 @@
+{
+  "workbench.colorTheme": "Dracula Pro (Van Helsing)",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "git.autofetch": true,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "workbench.iconTheme": null,
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "Hyper.app",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.associations": {
+    "*.snippet": "typescriptreact"
+  },
+  "go.useLanguageServer": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "prettier.requireConfig": true,
+  "liveshare.featureSet": "insiders",
+  "reason_language_server.reloadOnChange": true,
+  "typescript.experimental.useSeparateSyntaxServer": true,
+  "githubPullRequests.queries": [
+    {
+      "label": "Waiting For My Review",
+      "query": "is:open review-requested:${user}"
+    },
+    {
+      "label": "Assigned To Me",
+      "query": "is:open assignee:${user}"
+    },
+    {
+      "label": "Created By Me",
+      "query": "is:open author:${user}"
+    }
+  ],
+  "atlascode.jira.workingSite": {
+    "baseUrlSuffix": "atlassian.net"
+  },
+  "yaml.schemas": {
+    "file:///Users/drew.wyatt/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.bitbucket.issues.explorerEnabled": false,
+  "atlascode.bitbucket.statusbar.enabled": false,
+  "atlascode.showWelcomeOnInstall": false,
+  "prettier.disableLanguages": [
+    "vue",
+    "reason"
+  ],
+  "editor.renderWhitespace": "all",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "git.enableSmartCommit": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "python.jediEnabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "esnext",
+    "structopt",
+    "webtv"
+  ],
+  "cSpell.ignorePaths": [
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/objects/**",
+    "**/*.ts",
+    "**/*.tsx",
+    ".vscode"
+  ],
+  "cSpell.enableFiletypes": [
+    "git-commit",
+    "markdown",
+    "plaintext",
+    "text"
+  ],
+  "rust-client.channel": "nightly-2020-02-22",
+  "zeplin.preferredApplicationType": "Web",
+  "prettier.packageManager": "yarn",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "yaml.format.enable": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.languageServer": "Microsoft",
+  "carbon.backgroundColor": "rgba(171, 184, 195, 1)",
+  "carbon.fontFamily": "Fira Code",
+  "carbon.lineNumbers": true,
+  "carbon.theme": "dracula-pro",
+  "editor.tabSize": 2,
+  "codespaces.accountProvider": "GitHub",
+  "search.exclude": {
+    "**/_next/**": true,
+    "**/.next/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "node_modules/**": true
+  },
+  "files.watcherExclude": {
+    "**/_next/**": true,
+    "**/.next/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "node_modules/**": true
+  },
+  "atlascode.jira.enabled": true,
+  "atlascode.bitbucket.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "[fsharp]": {
+    "editor.defaultFormatter": "Ionide.Ionide-fsharp"
+  },
+  "rust-analyzer.checkOnSave.overrideCommand": null,
+  "workbench.productIconTheme": "icons-carbon",
+  "liveshare.authenticationProvider": "GitHub",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "redhat.telemetry.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "window.zoomLevel": 4,
+  "editor.accessibilitySupport": "off"
+}
