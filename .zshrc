@@ -109,3 +109,5 @@ test -f '/Users/drewwyatt/Library/Preferences/netlify/helper/path.zsh.inc' && so
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 eval $(thefuck --alias)
+
+export GPG_TTY=$(tty)
