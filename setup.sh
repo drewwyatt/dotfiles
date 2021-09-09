@@ -18,3 +18,5 @@ done
 # Symlink VS Code files
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode/keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
+ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode/settings.json" "${HOME}/Library/Application Support/Code - Insiders/User/settings.json"
+ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode/keybindings.json" "${HOME}/Library/Application Support/Code - Insiders/User/keybindings.json"
