@@ -70,9 +70,19 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.userWords": [
+    "browserslist",
+    "Contentful",
     "esnext",
+    "hlsjs",
+    "inspectpack",
+    "linaria",
+    "peloton",
+    "Smartling",
     "structopt",
-    "webtv"
+    "TTFB",
+    "webtv",
+    "youbora",
+    "youboralib"
   ],
   "cSpell.ignorePaths": [
     "**/package-lock.json",
@@ -142,6 +152,6 @@
   "redhat.telemetry.enabled": true,
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 4,
   "workbench.startupEditor": "none"
 }
