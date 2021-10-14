@@ -2,7 +2,7 @@ arrowParens = "avoid"
 printWidth = 90
 semi = false
 singleQuote = true
-tabWidth = true
+tabWidth = 2
 trailingComma = "all"
 
 [[overrides]]
