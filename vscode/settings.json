@@ -17,12 +17,15 @@
   "files.associations": {
     "*.snippet": "typescriptreact"
   },
+  "editor.guides.bracketPairs": true,
   "go.useLanguageServer": true,
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "prettier.requireConfig": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "all",
   "liveshare.featureSet": "insiders",
   "reason_language_server.reloadOnChange": true,
   "typescript.experimental.useSeparateSyntaxServer": true,
@@ -49,10 +52,7 @@
   "atlascode.bitbucket.issues.explorerEnabled": false,
   "atlascode.bitbucket.statusbar.enabled": false,
   "atlascode.showWelcomeOnInstall": false,
-  "prettier.disableLanguages": [
-    "vue",
-    "reason"
-  ],
+  "prettier.disableLanguages": ["vue", "reason"],
   "editor.renderWhitespace": "all",
   "eslint.validate": [
     "javascript",
@@ -93,12 +93,7 @@
     "**/*.tsx",
     ".vscode"
   ],
-  "cSpell.enableFiletypes": [
-    "git-commit",
-    "markdown",
-    "plaintext",
-    "text"
-  ],
+  "cSpell.enableFiletypes": ["git-commit", "markdown", "plaintext", "text"],
   "rust-client.channel": "nightly-2020-02-22",
   "zeplin.preferredApplicationType": "Web",
   "prettier.packageManager": "yarn",
@@ -132,6 +127,10 @@
   },
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": false,
+  "prettier.configPath": "~/.prettierrc.toml",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -152,6 +151,6 @@
   "redhat.telemetry.enabled": true,
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
-  "window.zoomLevel": 4,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 4
 }
