@@ -69,6 +69,13 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
   "cSpell.userWords": [
     "browserslist",
     "Contentful",
@@ -152,5 +159,12 @@
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
   "workbench.startupEditor": "none",
-  "window.zoomLevel": 4
+  "window.zoomLevel": 5,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.editor.showTabs": false
 }

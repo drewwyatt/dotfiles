@@ -9,3 +9,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
+# Add .NET Core SDK tools
+export PATH="$PATH:/Users/drewwyatt/.dotnet/tools"

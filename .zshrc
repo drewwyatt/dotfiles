@@ -124,8 +124,15 @@ export GPG_TTY=$(tty)
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
+### Java bits
+
 export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export JAVA_ANDROID_HOME='/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home'
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="/usr/local/opt/gradle@6/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/gradle@6/bin:$PATH"
