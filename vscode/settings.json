@@ -134,7 +134,6 @@
   },
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": false,
-  "prettier.configPath": "~/.prettierrc.toml",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -159,12 +158,18 @@
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
   "workbench.startupEditor": "none",
-  "window.zoomLevel": 5,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.editor.showTabs": false
+  "workbench.editor.showTabs": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "window.zoomLevel": 5,
+  "eslint.codeAction.disableRuleComment": {
+    "enable": false
+  }
 }
