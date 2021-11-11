@@ -77,7 +77,7 @@ ZSH_THEME="bira"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  osx
+  macos
   z
   zsh-autosuggestions
   zsh-syntax-highlighting
