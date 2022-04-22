@@ -1,8 +1,5 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -78,6 +75,7 @@ ZSH_THEME="bira"
 plugins=(
   git
   macos
+  pyenv
   z
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -123,22 +121,33 @@ eval $(thefuck --alias)
 
 export GPG_TTY=$(tty)
 
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 ### Java bits
 
-export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export JAVA_ANDROID_HOME='/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home'
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH="/usr/local/opt/gradle@6/bin:$PATH"
+# export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+# export ANDROID_HOME="$HOME/Library/Android/sdk"
+# export JAVA_ANDROID_HOME='/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home'
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export PATH="/usr/local/opt/gradle@6/bin:$PATH"
 
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export PATH="/opt/homebrew/opt/gradle@6/bin:$PATH"
+# export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# export PATH="/opt/homebrew/opt/gradle@6/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export PLAYDATE_SDK_PATH="/Users/drewwyatt/Developer/PlaydateSDK"
+
+### Dotnet
+export PATH="/usr/local/share/dotnet/x64:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
+
+# Python
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+eval "$(pyenv init -)"
