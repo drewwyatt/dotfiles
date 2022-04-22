@@ -76,18 +76,28 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "cSpell.userWords": [
     "browserslist",
+    "bugsnag",
     "Contentful",
+    "elif",
     "esnext",
     "hlsjs",
     "inspectpack",
+    "interactor",
     "linaria",
+    "pathspec",
     "peloton",
+    "pelotoncycle",
     "Smartling",
     "structopt",
+    "termion",
     "TTFB",
     "webtv",
+    "wordl",
     "youbora",
     "youboralib"
   ],
@@ -142,7 +152,7 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer",
+    "editor.defaultFormatter": "rust-lang.rust",
     "editor.formatOnSave": true
   },
   "[fsharp]": {
@@ -164,12 +174,26 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-  "window.zoomLevel": 5,
   "eslint.codeAction.disableRuleComment": {
     "enable": false
-  }
+  },
+  "rust-client.rustupPath": "/Users/drewwyatt/.cargo/bin/rustup",
+  "rust-client.rlsPath": "/Users/drewwyatt/.cargo/bin/rls",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "FSharp.suggestGitignore": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "window.zoomLevel": 4,
+  "Lua.telemetry.enable": true
 }
