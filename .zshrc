@@ -132,9 +132,27 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # export PATH=$PATH:$ANDROID_HOME/tools/bin
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
 # export PATH="/usr/local/opt/gradle@6/bin:$PATH"
-
 # export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # export PATH="/opt/homebrew/opt/gradle@6/bin:$PATH"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"
+
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_1_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_ANDROID_HOME='/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home'
+alias java-11='export JAVA_HOME=$JAVA_11_HOME'
+alias java-1.8='export JAVA_HOME=$JAVA_1_8_HOME'
+alias java-android='export JAVA_HOME=$JAVA_ANDROID_HOME'
+
+java-11
+export ANDROID_HOME=“$HOME/Library/Android/sdk”
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:/usr/local/Cellar/gradle@6/6.9.2/bin
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export ANDROID_SDK=$ANDROID_HOME
+
+#################
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -145,9 +163,10 @@ export PLAYDATE_SDK_PATH="/Users/drewwyatt/Developer/PlaydateSDK"
 ### Dotnet
 export PATH="/usr/local/share/dotnet/x64:$PATH"
 
-# Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
-
 # Python
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 eval "$(pyenv init -)"
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
